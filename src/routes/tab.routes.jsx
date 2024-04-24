@@ -5,6 +5,7 @@ import Home from "../screens/Home";
 import Profile from "../screens/Profile";
 import Category from "../screens/Category";
 import { user } from "../data/Profile";
+import Cadastro from "../screens/Cadastro";
 
 const Tab = createBottomTabNavigator();
 
@@ -57,6 +58,22 @@ const TabRoutes = () => {
             />
           ),
           tabBarLabel: "Categorias",
+          tabBarActiveTintColor: "#131313",
+          tabBarInactiveTintColor: "#D6D6D6",
+        }}
+      />
+        <Tab.Screen
+        name="Cadastro"
+        component={Cadastro}
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <Feather
+              name="plus"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          tabBarLabel: "Cadastro",
           tabBarActiveTintColor: "#131313",
           tabBarInactiveTintColor: "#D6D6D6",
         }}

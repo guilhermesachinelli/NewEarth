@@ -5,6 +5,7 @@ import Home from "../screens/Home";
 import Profile from "../screens/Profile";
 import Category from "../screens/Category";
 import { user } from "../data/Profile";
+import Cadastro from "../screens/Cadastro";
 
 const Drawer = createDrawerNavigator();
 
@@ -59,6 +60,23 @@ const DrawerRoutes = () => {
             />
           ),
           drawerLabel: "Categorias",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
+       <Drawer.Screen
+        name="Cadastro"
+        component={Cadastro}
+        options={{
+          headerTitle: "NewEarth",
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="plus"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          drawerLabel: "Cadastro",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
         }}
