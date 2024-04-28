@@ -21,6 +21,12 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 16,
   },
+  userContainer: {
+    backgroundColor: "#C9D4FF",
+    padding: 10,
+    margin: 10,
+    borderRadius: 5,
+  },
 });
 
 export default styles;
