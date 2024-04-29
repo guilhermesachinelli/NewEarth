@@ -6,6 +6,8 @@ import Profile from "../screens/Profile";
 import Category from "../screens/Category";
 import { user } from "../data/Profile";
 import Cadastro from "../screens/Cadastro";
+import Perfils from "../screens/Perfils";
+import QuemSomos from "../screens/QuemSomos";
 
 const Drawer = createDrawerNavigator();
 
@@ -42,7 +44,7 @@ const DrawerRoutes = () => {
               color={focused ? "#131313" : "#D6D6D6"}
             />
           ),
-          drawerLabel: "Perfil",
+          drawerLabel: "Usuário",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
         }}
@@ -83,7 +85,42 @@ const DrawerRoutes = () => {
           drawerInactiveTintColor: "#D6D6D6",
         }}
       />
+            <Drawer.Screen
+        name="Perfil"
+        component={Perfils}
+        options={{
+          headerTitle: "NewEarth",
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="user"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          drawerLabel: "Perfil",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
+               <Drawer.Screen
+        name="Quem Somos"
+        component={QuemSomos}
+        options={{
+          headerTitle: "NewEarth",
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="users"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          drawerLabel: "Quem Somos",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
     </Drawer.Navigator>
+    
   );
 };
 
