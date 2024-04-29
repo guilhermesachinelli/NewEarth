@@ -2,10 +2,9 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    width: "85%",
+    width: "100%",
     height: "100%",
     alignItems: "center",
-    marginLeft: "8%",
     alignContent: "center",
     margin: "auto",
     paddingTop: "5%",
@@ -13,6 +12,7 @@ const styles = StyleSheet.create({
   },
  texts:{
   textAlign: "justify",
+
  },
  refimage:{
   width: "100%",
@@ -26,6 +26,21 @@ const styles = StyleSheet.create({
   fontStyle: "italic",
   margin: 10,
  },
+ nos:{
+  marginBottom: 150,
+ },
+ pfpUser: {
+  alignItems: "center",
+  backgroundColor: "#ece8e7",
+  margin: "10%",
+  padding: 20,
+},
+pfp:{
+  width: 100,
+  height: 150,
+  borderRadius: 10,
+  margin: 10,
+},
 });
 
 export default styles;

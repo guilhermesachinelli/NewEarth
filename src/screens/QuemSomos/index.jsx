@@ -1,10 +1,16 @@
-import { Image, ScrollView, Text, View } from "react-native";
+import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import styles from "./styles";
+import { useNavigation } from "@react-navigation/native";
+import FooterNew from "../../components/FooterNew";
 
 
 export default function QuemSomos() {
+  const navigation = useNavigation();
+  const nos = [user1 = { name: "Guilherme Lima", description: "eu sou eu" }]
 
-  const Nos = [user1 = { name: "Guilherme Lima", description: "eu sou eu" }, user2 = { name: "Guilherme Lima", description: "eu sou eu" }, user3 = { name: "Guilherme Lima", description: "eu sou eu" }, user4 = { name: "Guilherme Lima", description: "eu sou eu" }, user5 = { name: "Guilherme Lima", description: "eu sou eu" }]
+  const handleNavigate = () => {
+    navigation.navigate('Perfils');
+  }
 
   return (
     <View style={styles.container}>
@@ -20,6 +26,14 @@ export default function QuemSomos() {
       <Text style={styles.texts}>• Qualidade: Priorizamos a qualidade e a durabilidade em todas as nossas próteses, garantindo o melhor desempenho para os nossos clientes.</Text>
       <Text style={styles.texts}>• Acessibilidade: Acreditamos que todos devem ter acesso a próteses de alta qualidade, independentemente da sua renda ou situação financeira.</Text>
       <Text style={styles.texts}>• Inclusão: Promovemos a inclusão e o empoderamento de pessoas com deficiência, combatendo o preconceito e a discriminação.</Text>
+
+      <ScrollView horizontal={true}>
+      <TouchableOpacity onPress={handleNavigate()}>
+        <Image source={require('./../../../assets/icon.png')} style={styles.pfp} />
+        <Text style={styles.name}>{nos[0].name}</Text>
+      </TouchableOpacity>
+      </ScrollView>
+      <FooterNew/>
       </ScrollView>
     </View>
   );
