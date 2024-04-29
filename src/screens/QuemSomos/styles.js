@@ -2,31 +2,30 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: "center",
+    width: "85%",
+    height: "100%",
     alignItems: "center",
+    marginLeft: "8%",
+    alignContent: "center",
+    margin: "auto",
+    paddingTop: "5%",
+
   },
-  button: {
-    marginTop: 20,
-    padding: 10,
-    backgroundColor: "#C9D4FF",
-    borderRadius: 5,
-  },
-  user: {
-    marginTop: 20,
-    padding: 10,
-    backgroundColor: "#C9D4FF",
-    borderRadius: 5,
-  },
-  text: {
-    fontSize: 16,
-  },
-  userContainer: {
-    backgroundColor: "#C9D4FF",
-    padding: 10,
-    margin: 10,
-    borderRadius: 5,
-  },
+ texts:{
+  textAlign: "justify",
+ },
+ refimage:{
+  width: "100%",
+  height: 200,
+  borderRadius: 10,
+  margin: 10,
+ },
+ titletexts:{
+  fontSize: 20,
+  fontWeight: "bold",
+  fontStyle: "italic",
+  margin: 10,
+ },
 });
 
 export default styles;
