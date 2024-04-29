@@ -6,6 +6,8 @@ import Profile from "../screens/Profile";
 import Category from "../screens/Category";
 import { user } from "../data/Profile";
 import Cadastro from "../screens/Cadastro";
+import Perfils from "../screens/Perfils";
+import QuemSomos from "../screens/QuemSomos";
 
 const Drawer = createDrawerNavigator();
 
@@ -39,7 +41,7 @@ const DrawerRoutes = () => {
       <Drawer.Screen
         name="Profile"
         component={Profile}
-        initialParams={{ data: user }}
+        initialParams={{user}}
         options={{
           headerTitle: "",
           drawerIcon: ({ focused }) => (
@@ -49,7 +51,7 @@ const DrawerRoutes = () => {
               color={focused ? "#131313" : "#D6D6D6"}
             />
           ),
-          drawerLabel: "Perfil",
+          drawerLabel: "Usuário",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
         }}
@@ -90,8 +92,8 @@ const DrawerRoutes = () => {
           drawerInactiveTintColor: "#D6D6D6",
         }}
       />
-      
     </Drawer.Navigator>
+    
   );
 };
 
