@@ -3,6 +3,7 @@ import { useState,useEffect } from "react";
 import { useNavigation , useIsFocused} from "@react-navigation/native";
 import styles from "./styles";
 import Title from "../../components/Title";
+import usersList from "../../models/usersList.js";
 import TouchButton from "../../components/TouchButton";
 
 export default function Profile({ route }) {

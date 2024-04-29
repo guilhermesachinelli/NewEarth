@@ -6,8 +6,9 @@ import { View, Text, Button, TextInput, TouchableOpacity } from "react-native";
 import styles from "./styles";
 import Title from "../../components/Title";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
+import { TextInputMask } from "react-native-masked-text";
 
-export default function Cadastro() {
+export default function Cadastro({route}) {
    let { user, edit} = route.params;
    const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
    const [nome, setNome] = useState('');
@@ -99,10 +100,27 @@ export default function Cadastro() {
          />
          <Button title="Data de Nascimento" onPress={showDatePicker} />
          <TextInput style={styles.input} value={date ? formatDate(date) : ''} editable={false} />
-         <TextInput style={styles.input} placeholder="CPF" onChangeText={setCpf} value={cpf} />
+         <TextInputMask
+            style={styles.input}
+            placeholder="CPF"
+            type={"cpf"}
+            value={cpf}
+            onChangeText={setCpf}
+         />
          <TextInput style={styles.input} placeholder="Email" onChangeText={setEmail} value={email}/>
          <TextInput style={styles.input} placeholder="Endereço" onChangeText={setEndereco} value={endereco} />
-         <TextInput style={styles.input} placeholder="Telefone" onChangeText={setTelefone} value={telefone} />
+         <TextInputMask
+            style={styles.input}
+            placeholder="Telefone"
+            type={"cel-phone"}
+            options={{
+               maskType: 'BRL',
+               withDDD: true,
+               dddMask: '(99) ',
+            }}
+            value={telefone}
+            onChangeText={setTelefone}
+         />
          <TextInput style={styles.input} placeholder="Senha" onChangeText={setSenha} secureTextEntry={true} value={senha}/>
          <TextInput style={styles.input} placeholder="Confirme a Senha" onChangeText={setConfirmarSenha} secureTextEntry={true} value={confirmarSenha}/>
          <TextInput style={styles.input} placeholder="Necessidade" onChangeText={setNecessidade} value={necessidade}/>

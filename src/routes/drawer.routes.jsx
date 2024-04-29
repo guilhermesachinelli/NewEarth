@@ -50,6 +50,7 @@ const DrawerRoutes = () => {
       <Drawer.Screen
         name="Category"
         component={Category}
+        initialParams={{ data: user }}
         options={{
           headerTitle: "",
           drawerIcon: ({ focused }) => (
@@ -67,6 +68,7 @@ const DrawerRoutes = () => {
        <Drawer.Screen
         name="Cadastro"
         component={Cadastro}
+        initialParams={{ data: user }}
         options={{
           headerTitle: "NewEarth",
           drawerIcon: ({ focused }) => (
