@@ -1,6 +1,6 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Feather } from "@expo/vector-icons";
-
+import { Image } from "react-native";
 import Home from "../screens/Home";
 import Profile from "../screens/Profile";
 import Category from "../screens/Category";
@@ -10,8 +10,15 @@ import Cadastro from "../screens/Cadastro";
 const Drawer = createDrawerNavigator();
 
 const DrawerRoutes = () => {
+
+  <Image source={require('../../assets/images/logo.png')} 
+  onPress={() => Navigation.navigate ("Vanguardht")} 
+  style={{ width: 30, height: 30, marginTop: 50, marginBottom: 45,
+   width: 250, height: 70, marginLeft: 15, }} /> 
+
   return (
     <Drawer.Navigator screenOptions={{ headerShown: true }}>
+      
       <Drawer.Screen
         name="Home"
         component={Home}
@@ -83,6 +90,7 @@ const DrawerRoutes = () => {
           drawerInactiveTintColor: "#D6D6D6",
         }}
       />
+      
     </Drawer.Navigator>
   );
 };
