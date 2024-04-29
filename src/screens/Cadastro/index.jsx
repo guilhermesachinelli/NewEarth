@@ -26,7 +26,6 @@ export default function Cadastro({route}) {
    useEffect(() => {
       if(edit){
          setNome(user.nome);
-         
          setCpf(user.cpf);
          setEmail(user.email);
          setEndereco(user.endereco);
