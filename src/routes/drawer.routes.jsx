@@ -32,7 +32,7 @@ const DrawerRoutes = () => {
       <Drawer.Screen
         name="Profile"
         component={Profile}
-        initialParams={{ data: user }}
+        initialParams={{user}}
         options={{
           headerTitle: "",
           drawerIcon: ({ focused }) => (

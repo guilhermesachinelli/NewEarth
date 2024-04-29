@@ -1,4 +1,5 @@
 import User from "./users";
+import { user } from "../data/Profile";
 class UserList {
     constructor() {
         this.users = [];
@@ -42,4 +43,6 @@ class UserList {
     }
 }
 const usersList = new UserList();
+const newUser = new User(user.nome, user.dataNascimento, user.cpf, user.email, user.endereco, user.telefone, user.senha, user.confirmarSenha, user.necessidade);
+usersList.add(newUser);
 export default usersList;

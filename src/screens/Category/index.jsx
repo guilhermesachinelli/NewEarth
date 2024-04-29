@@ -24,7 +24,7 @@ export default function Category({ route }) {
         )
       }
       <Text>Nome: {data.nome}</Text>
-      <Text>Idade: {usersList.calculateAge(data.dataNascimento)}</Text>
+      <Text>Idade: {data.dataNascimento}</Text>
       <Text>CPF: {data.cpf}</Text>
       <Text>Email: {data.email}</Text>
       <Text>Endereço: {data.endereco}</Text>
