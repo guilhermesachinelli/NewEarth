@@ -1,17 +1,21 @@
-import { View, Image } from "react-native";
-
+import { View, Image, Text } from "react-native";
 import styles from "./styles";
 import Title from "../../components/Title";
-import { TextInput } from "react-native-gesture-handler";
 
 export default function Home() {
+
   return (
     <View style={styles.container}>
-      <Image source={require('../../../assets/images/home1.png')} 
-      onPress={() => Navigation.navigate ("Vanguardht")} 
-      style={{ width: 30, height: 30, marginTop: 50, marginBottom: 45,
-       width: 350, height: 210, borderRadius: 30, marginLeft: 15, }} />
-
+      <Image source={require("../../../assets/video.gif")} style={{ width: '100%', height: 300, resizeMode: 'contain', marginTop: -35 }} />
+      <View style={styles.titleContent}>
+        <Text style={styles.titleHeader}>AeroArm 23</Text>
+        <Text style={styles.subTitle}>Construída para durar, desenhada para empoderar, explore novos horizontes! </Text>
+      </View>
+      <View style={styles.newColection}>
+        <Image source={require("../../../assets/plat.jpg")} style={{ width: 350, height: 300, resizeMode: 'contain', marginLeft: 25 }} />
+        <Text style={styles.titleHeaderWhite}>Nova Coleção</Text>
+        <Text style={styles.subtitlewhite}>Conheça a nova coleção AeroArm 23, feitas com materiais de alta qualidade e durabilidade. </Text>
+      </View>
     </View>
   );
 }
