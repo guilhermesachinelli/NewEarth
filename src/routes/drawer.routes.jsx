@@ -8,7 +8,11 @@ import { user } from "../data/Profile";
 import Cadastro from "../screens/Cadastro";
 import Perfils from "../screens/Perfils";
 import QuemSomos from "../screens/QuemSomos";
+
+import Proposta from "../screens/Proposta";
+
 import Paraolimpiadas from "../screens/Paraolimpiadas";
+
 
 const Drawer = createDrawerNavigator();
 
@@ -140,13 +144,31 @@ const DrawerRoutes = () => {
           drawerItemStyle: { height: 0 }
         }}
       />
+
+       <Drawer.Screen
+        name="Proposta"
+        component={Proposta}
+
       <Drawer.Screen
         name="Paraolimpiadas"
         component={Paraolimpiadas}
+
         options={{
           headerTitle: "NewEarth",
           drawerIcon: ({ focused }) => (
             <Feather
+
+              name="users"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+            
+          ),
+          drawerLabel: "Perfil do Criador",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+          drawerItemStyle: { height: 0 }
+
               name="heart"
               size={24}
               color={focused ? "#131313" : "#D6D6D6"}
@@ -156,6 +178,7 @@ const DrawerRoutes = () => {
           drawerLabel: "Paraolimpiadas",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
+
         }}
       />
     </Drawer.Navigator>
