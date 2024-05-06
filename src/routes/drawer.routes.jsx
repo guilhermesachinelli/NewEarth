@@ -8,6 +8,7 @@ import { user } from "../data/Profile";
 import Cadastro from "../screens/Cadastro";
 import Perfils from "../screens/Perfils";
 import QuemSomos from "../screens/QuemSomos";
+import Proposta from "../screens/Proposta";
 
 const Drawer = createDrawerNavigator();
 
@@ -120,6 +121,25 @@ const DrawerRoutes = () => {
        <Drawer.Screen
         name="Perfils"
         component={Perfils}
+        options={{
+          headerTitle: "NewEarth",
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="users"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+            
+          ),
+          drawerLabel: "Perfil do Criador",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+          drawerItemStyle: { height: 0 }
+        }}
+      />
+       <Drawer.Screen
+        name="Proposta"
+        component={Proposta}
         options={{
           headerTitle: "NewEarth",
           drawerIcon: ({ focused }) => (
