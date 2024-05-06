@@ -5,7 +5,7 @@ export default function Paraolimpiadas() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Image
-        source={require('../../../assets/images/paraolimpiadas.png')}
+        source={require('../../../assets/paraolimpiadas.png')}
         style={styles.image}
       />
       <Text style={styles.textTitle}>
@@ -19,7 +19,7 @@ export default function Paraolimpiadas() {
         esportivo inabalável.
       </Text>
       <Image
-        source={require('../../../assets/images/paraolimpiadas2.png')}
+        source={require('../../../assets/paraolimpiadas2.png')}
         style={styles.image}
       />
       <Text style={styles.text}>
@@ -112,7 +112,7 @@ A NewEarth, referência em próteses sustentáveis, firma parceria com gigantes 
       <Text style={[styles.text, styles.sectionTitle]}>Patrocinadores</Text>
 
       <Image
-        source={require('../../../assets/images/logosPatrocinadores.png')}
+        source={require('../../../assets/logosPatrocinadores.png')}
         style={styles.image}
       />
     </ScrollView>
