@@ -13,7 +13,7 @@ export default function QuemSomos() {
       <ScrollView>
         <Text style={styles.texts}>A NewEarth é uma empresa pioneira na fabricação de próteses sustentáveis e inovadoras, dedicada a transformar a vida de pessoas com deficiência física. Através da união de tecnologia de ponta, materiais ecológicos e um design humanizado, a NewEarth oferece soluções personalizadas que garantem mobilidade, conforto e liberdade para seus usuários.</Text>
 
-        <Image source={require('./../../../assets/6c4d6198-ae5e-44aa-96e1-57b48ab42841.jpg')} style={styles.refimage} />
+      
 
         <Text style={styles.titletexts}>Nossos Valores</Text>
 

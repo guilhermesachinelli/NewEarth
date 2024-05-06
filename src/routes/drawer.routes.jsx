@@ -8,8 +8,11 @@ import { user } from "../data/Profile";
 import Cadastro from "../screens/Cadastro";
 import Perfils from "../screens/Perfils";
 import QuemSomos from "../screens/QuemSomos";
+import Proposta from "../screens/Proposta";
 import Paraolimpiadas from "../screens/Paraolimpiadas";
 import Proteses from "../screens/Proteses";
+import Sustentabilidade from "../screens/Sustentabilidade";
+
 
 const Drawer = createDrawerNavigator();
 
@@ -142,6 +145,23 @@ const DrawerRoutes = () => {
         }}
       />
       <Drawer.Screen
+        name="Proposta"
+        component={Proposta}
+        options={{
+          headerTitle: "NewEarth",
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="book-open"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          drawerLabel: "Proposta",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
+      <Drawer.Screen
         name="Paraolimpiadas"
         component={Paraolimpiadas}
         options={{
@@ -152,9 +172,25 @@ const DrawerRoutes = () => {
               size={24}
               color={focused ? "#131313" : "#D6D6D6"}
             />
-
           ),
-          drawerLabel: "Paraolimpiadas",
+          drawerLabel: "Paraolimpíadas",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
+      <Drawer.Screen
+        name="Sustentabilidade"
+        component={Sustentabilidade}
+        options={{
+          headerTitle: "NewEarth",
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="sun"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          drawerLabel: "Sustentabilidade",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
         }}

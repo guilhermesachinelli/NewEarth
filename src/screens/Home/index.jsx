@@ -1,21 +1,40 @@
-import { View, Image, Text } from "react-native";
-import styles from "./styles";
-import Title from "../../components/Title";
+import React from 'react';
+import { Image, Text, ScrollView} from 'react-native';
+import styles from './styles';
 
-export default function Home() {
-
+export default function Proposta() {
   return (
-    <View style={styles.container}>
-      <Image source={require("../../../assets/video.gif")} style={{ width: '100%', height: 300, resizeMode: 'contain', marginTop: -35 }} />
-      <View style={styles.titleContent}>
-        <Text style={styles.titleHeader}>AeroArm 23</Text>
-        <Text style={styles.subTitle}>Construída para durar, desenhada para empoderar, explore novos horizontes! </Text>
-      </View>
-      <View style={styles.newColection}>
-        <Image source={require("../../../assets/plat.jpg")} style={{ width: 350, height: 300, resizeMode: 'contain', marginLeft: 25 }} />
-        <Text style={styles.titleHeaderWhite}>Nova Coleção</Text>
-        <Text style={styles.subtitlewhite}>Conheça a nova coleção AeroArm 23, feitas com materiais de alta qualidade e durabilidade. </Text>
-      </View>
-    </View>
+    <ScrollView contentContainerStyle={styles.container}>
+      <Image
+        source={require('../../../assets/home1.png')}
+        style={styles.image}
+      />
+      <Text style={styles.textTitle}>
+      NewEarth com a Paralimpíada
+      </Text>
+      <Text style={styles.text}>
+      Em um mundo onde a sustentabilidade é uma preocupação crescente, a NewEarth emerge como um farol de esperança, oferecendo soluções inovadoras para uma vida melhor. 
+      </Text>
+      <Image
+        source={require('../../../assets/home2.png')}
+        style={styles.image}
+      />
+      
+      <Text style={[styles.text, styles.sectionTitle]}>A NewEarth, referência em próteses sustentáveis, firma parceria com gigantes como Red Bull, Unilever, Bosch, Coca-Cola, Nike e Samsung. A união visa um futuro onde a tecnologia, a inovação e a sustentabilidade se aliam para:
+</Text>
+      <Text style={styles.text}>
+        • Desenvolvimento de próteses de alto desempenho para atletas;
+Utilização de materiais reciclados e biodegradáveis;
+Integração de inteligência artificial e sensores para próteses inteligentes;
+Promoção da inclusão e visibilidade de pessoas com deficiência;
+Desenvolvimento de próteses para prática de esportes de alto nível;
+Integração de tecnologias de ponta nas próteses.
+     </Text> 
+
+     <Image
+        source={require('../../../assets/logosPatrocinadores.png')}
+        style={styles.image}
+      />
+    </ScrollView>
   );
 }
