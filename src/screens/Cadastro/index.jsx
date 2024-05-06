@@ -97,7 +97,9 @@ export default function Cadastro({route}) {
             onConfirm={handleConfirm}
             onCancel={hideDatePicker}
          />
-         <Button title="Data de Nascimento" onPress={showDatePicker}/>
+         <Button title="Data de Nascimento" onPress={showDatePicker}
+         color={"#A1B65E"}
+         />
          <TextInput style={styles.input} value={date ? formatDate(date) : ''} editable={false} />
          <TextInputMask
             style={styles.input}
