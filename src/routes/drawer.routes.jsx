@@ -9,6 +9,7 @@ import Cadastro from "../screens/Cadastro";
 import Perfils from "../screens/Perfils";
 import QuemSomos from "../screens/QuemSomos";
 import Paraolimpiadas from "../screens/Paraolimpiadas";
+import Social from "../screens/Social";
 
 const Drawer = createDrawerNavigator();
 
@@ -118,7 +119,29 @@ const DrawerRoutes = () => {
           drawerInactiveTintColor: "#D6D6D6",
         }}
       />
+
+<Drawer.Screen
+        name="Social"
+        component={Social}
+        initialParams={{ data: user }}
+        options={{
+          headerTitle: "NewEarth",
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="heart"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          drawerLabel: "Paraolimpiadas",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
+
     </Drawer.Navigator>
+
+  
     
   );
 };
