@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   },
   image: {
     marginTop: 20,
-    marginBottom: 145,
+    marginBottom: 20,
     width: '100%',
     height: 210,
     borderRadius: 30,
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   },
   lastimage: {
     marginTop: 20,
-    marginBottom: 140,
+    marginBottom: 145,
     width: '100%',
     height: 210,
     borderRadius: 30,

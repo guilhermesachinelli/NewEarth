@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Image, Text, ScrollView, StyleSheet } from 'react-native';
 import styles from './styles';
+import FooterNew from '../../components/FooterNew';
 export default function Proteses() {
     return (
         <ScrollView contentContainerStyle={styles.container}>
@@ -60,15 +61,16 @@ A prótese T63 é uma solução avançada para atletas de corrida amputados, ofe
             </View>
 
 
-            <View style={styles.containerzinho}>
+            <View style={styles.lastcontainerzinho}>
                 <Image
-                    source={require('../../../assets/bike.png')}
+                    source={require('./../../../assets/bike.png')}
                     style={styles.image}
                 />
                 <Text style={styles.textTitle}>T51</Text>
                 <Text style={styles.info} >A cadeira de rodas para atletismo na classe T51 é essencial para atletas paralímpicos que competem em corridas de pista e campo. Projetada para leveza, resistência e aerodinâmica, proporciona uma condução suave e eficiente, permitindo velocidades impressionantes. Altamente ajustável e personalizável, adapta-se às necessidades individuais de cada atleta. Combina tecnologia avançada com engenharia de precisão, capacitando os atletas a alcançarem seus objetivos e superarem limites no esporte paralímpico.</Text>
             </View>
 
+<FooterNew />
         </ScrollView>
     );
 }

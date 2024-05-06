@@ -2,8 +2,10 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
-    backgroundColor: '#a4b690', // Cor de fundo mais clara para um tema de natureza
+    alignItems: "center",
+    alignContent: "center",
+    margin: "auto",
+    paddingTop: "5%",
   },
   image: {
     marginTop: 20,
@@ -23,7 +25,7 @@ const styles = StyleSheet.create({
   containerzinho:{
     padding: -50,
     marginBottom: 30,
-    backgroundColor: '#819e62',
+    backgroundColor: '#A1B65E',
     borderRadius:29, // Cor de fundo mais clara para um tema de natureza
   },
   info: {
@@ -64,6 +66,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: 20,
     color: '#A1B65E', // Usando uma cor diferente para destacar os títulos das seções
+  },
+  lastcontainerzinho:{
+    padding: -50,
+    marginBottom: 145,
+    backgroundColor: '#A1B65E',
+    borderRadius:29, // Cor de fundo mais clara para um tema de natureza
   },
 });
 
