@@ -43,7 +43,7 @@ pfp:{
   margin: 10,
 },
 teamContainer: {
-  marginBottom: 30,
+  marginBottom: 140,
 },
 profileContainer: {
   backgroundColor: "#ece8e7",

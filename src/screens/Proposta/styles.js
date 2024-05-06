@@ -36,6 +36,9 @@ const styles = StyleSheet.create({
     marginTop: 20,
     color: '#A1B65E', // Usando uma cor diferente para destacar os títulos das seções
   },
+  lastText: {
+    marginBottom: 150,
+  },
 });
 
 export default styles;

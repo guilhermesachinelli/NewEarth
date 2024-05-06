@@ -57,6 +57,8 @@ export default function Proposta() {
 
       <Text style={[styles.text, styles.sectionTitle]}>Juntos, podemos construir um mundo melhor.</Text>
 
+      <Text style={ styles.lastText}>.</Text>
+
     <FooterNew />
     </ScrollView>
   );
