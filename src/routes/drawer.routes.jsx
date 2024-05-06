@@ -144,41 +144,38 @@ const DrawerRoutes = () => {
           drawerItemStyle: { height: 0 }
         }}
       />
-
-       <Drawer.Screen
+      <Drawer.Screen
         name="Proposta"
         component={Proposta}
-
-      <Drawer.Screen
-        name="Paraolimpiadas"
-        component={Paraolimpiadas}
-
         options={{
           headerTitle: "NewEarth",
           drawerIcon: ({ focused }) => (
             <Feather
-
-              name="users"
+              name="book-open"
               size={24}
               color={focused ? "#131313" : "#D6D6D6"}
             />
-            
           ),
-          drawerLabel: "Perfil do Criador",
+          drawerLabel: "Proposta",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
-          drawerItemStyle: { height: 0 }
-
+        }}
+      />
+      <Drawer.Screen
+        name="Paraolimpiadas"
+        component={Paraolimpiadas}
+        options={{
+          headerTitle: "NewEarth",
+          drawerIcon: ({ focused }) => (
+            <Feather
               name="heart"
               size={24}
               color={focused ? "#131313" : "#D6D6D6"}
             />
-
           ),
-          drawerLabel: "Paraolimpiadas",
+          drawerLabel: "Paraolimpíadas",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
-
         }}
       />
     </Drawer.Navigator>
