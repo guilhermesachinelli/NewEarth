@@ -41,6 +41,14 @@ pfp:{
   borderRadius: 10,
   margin: 10,
 },
+teamContainer: {
+  marginBottom: 150,
+},
+name: {
+  fontSize: 14,
+  fontWeight: "bold",
+  textAlign: "center",
+},
 });
 
 export default styles;

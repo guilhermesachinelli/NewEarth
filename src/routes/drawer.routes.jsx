@@ -77,6 +77,7 @@ const DrawerRoutes = () => {
             />
           ),
           drawerLabel: "Categorias",
+          drawerItemStyle: { height: 0 },
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
         }}
@@ -97,6 +98,42 @@ const DrawerRoutes = () => {
           drawerLabel: "Cadastro",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
+       <Drawer.Screen
+        name="Quem Somos"
+        component={QuemSomos}
+        options={{
+          headerTitle: "NewEarth",
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="users"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          drawerLabel: "Quem Somos",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
+       <Drawer.Screen
+        name="Perfils"
+        component={Perfils}
+        options={{
+          headerTitle: "NewEarth",
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="users"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+            
+          ),
+          drawerLabel: "Perfil do Criador",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+          drawerItemStyle: { height: 0 }
         }}
       />
     </Drawer.Navigator>
