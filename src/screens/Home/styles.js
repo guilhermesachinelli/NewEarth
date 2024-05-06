@@ -1,63 +1,38 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    flexDirection: "column",
+    padding: 20,
+    backgroundColor: '#f0f8ff', // Cor de fundo mais clara para um tema de natureza
   },
-  button: {
+  image: {
     marginTop: 20,
-    padding: 10,
-    backgroundColor: "#C9D4FF",
-    borderRadius: 5,
+    marginBottom: 20,
+    width: '100%',
+    height: 210,
+    borderRadius: 30,
   },
-  titleContent: {
-    width: 300,
-    alignItems: "center",
-    alignSelf: "center",
+  text: {
+    marginTop:10,
+    marginBottom: 10,
+    fontSize: 16,
+    lineHeight: 24,
+    color: '#333', // Adicionando cor ao texto para melhor contraste
   },
-  titleHeader: {
-    fontSize: 30,
-    fontWeight: "bold",
-    color: "#000",
-    textAlign: "center",
-    marginTop: -5,
-    fontFamily: "sans-serif",
+  textTitle: {
+    marginBottom: 20, 
+    fontSize: 21, 
+    lineHeight: 32,
+    fontWeight: 'bold', 
+    color: '#A1B65E', 
+    marginTop: 40, 
   },
-  subTitle: {
-    fontSize: 15,
-    fontWeight: "bold",
-    color: "#000",
-    textAlign: "center",
-    marginTop: 10,
-    fontFamily: "sans-serif",
-    width: 300,
-  },
-  newColection: {
-    backgroundColor: "#000",
-    height: 500,
+  
+  sectionTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
     marginTop: 20,
-    alignItems: "center",
-  },
-  titleHeaderWhite:{
-    fontSize: 30,
-    fontWeight: "bold",
-    color: "#fff",
-    textAlign: "center",
-    marginTop: 20,
-    fontFamily: "sans-serif",
-  },
-  subtitlewhite: {
-    fontSize: 15,
-    fontWeight: "bold",
-    color: "#fff",
-    textAlign: "center",
-    marginTop: 10,
-    fontFamily: "sans-serif",
-    textAlign: "center",
-    width: 300,
-
+    color: '#A1B65E', // Usando uma cor diferente para destacar os títulos das seções
   },
 });
 
