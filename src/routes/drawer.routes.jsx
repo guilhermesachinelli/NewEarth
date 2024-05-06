@@ -1,4 +1,4 @@
-import { createDrawerNavigator } from "@react-navigation/drawer";
+import { DrawerContent, createDrawerNavigator } from "@react-navigation/drawer";
 import { Feather } from "@expo/vector-icons";
 import { Image } from "react-native";
 import Home from "../screens/Home";
@@ -14,7 +14,7 @@ const Drawer = createDrawerNavigator();
 
 const DrawerRoutes = () => {
 
-  <Image source={require('../../assets/images/logo.png')} 
+  <Image source={require('../../assets/logo.png')} 
   onPress={() => Navigation.navigate ("Vanguardht")} 
   style={{ width: 30, height: 30, marginTop: 50, marginBottom: 45,
    width: 250, height: 70, marginLeft: 15, }} /> 
@@ -26,7 +26,14 @@ const DrawerRoutes = () => {
         name="Home"
         component={Home}
         options={{
-          headerTitle: "",
+          headerTitle: () => (
+            <Image
+              style={{ width: 300, height: 50 ,resizeMode: 'contain', alignSelf: 'center',
+              marginTop: 50, marginBottom: 45, marginRight: 50,
+              }}
+              source={require('../../assets/logo.png')}
+            />
+          ),
           drawerIcon: ({ focused }) => (
             <Feather
               name="home"
