@@ -5,6 +5,7 @@ import styles from "./styles";
 import Title from "../../components/Title";
 import usersList from "../../models/usersList.js";
 import TouchButton from "../../components/TouchButton";
+import FooterNew from "../../components/FooterNew/index.jsx";
 
 export default function Profile({ route }) {
   const navigation = useNavigation();
@@ -35,6 +36,7 @@ export default function Profile({ route }) {
           );
         }) 
       }
+      <FooterNew/>
     </View>
   );
 }
