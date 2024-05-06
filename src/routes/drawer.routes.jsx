@@ -8,27 +8,31 @@ import { user } from "../data/Profile";
 import Cadastro from "../screens/Cadastro";
 import Perfils from "../screens/Perfils";
 import QuemSomos from "../screens/QuemSomos";
+import Paraolimpiadas from "../screens/Paraolimpiadas";
 
 const Drawer = createDrawerNavigator();
 
 const DrawerRoutes = () => {
 
-  <Image source={require('../../assets/logo.png')} 
-  onPress={() => Navigation.navigate ("Vanguardht")} 
-  style={{ width: 30, height: 30, marginTop: 50, marginBottom: 45,
-   width: 250, height: 70, marginLeft: 15, }} /> 
+  <Image source={require('../../assets/logo.png')}
+    onPress={() => Navigation.navigate("Vanguardht")}
+    style={{
+      width: 30, height: 30, marginTop: 50, marginBottom: 45,
+      width: 250, height: 70, marginLeft: 15,
+    }} />
 
   return (
     <Drawer.Navigator screenOptions={{ headerShown: true }}>
-      
+
       <Drawer.Screen
         name="Home"
         component={Home}
         options={{
           headerTitle: () => (
             <Image
-              style={{ width: 300, height: 50 ,resizeMode: 'contain', alignSelf: 'center',
-              marginTop: 50, marginBottom: 45, marginRight: 50,
+              style={{
+                width: 300, height: 50, resizeMode: 'contain', alignSelf: 'center',
+                marginTop: 50, marginBottom: 45, marginRight: 50,
               }}
               source={require('../../assets/logo.png')}
             />
@@ -48,7 +52,7 @@ const DrawerRoutes = () => {
       <Drawer.Screen
         name="Profile"
         component={Profile}
-        initialParams={{user}}
+        initialParams={{ user }}
         options={{
           headerTitle: "",
           drawerIcon: ({ focused }) => (
@@ -82,7 +86,7 @@ const DrawerRoutes = () => {
           drawerInactiveTintColor: "#D6D6D6",
         }}
       />
-       <Drawer.Screen
+      <Drawer.Screen
         name="Cadastro"
         component={Cadastro}
         initialParams={{ data: user }}
@@ -100,7 +104,7 @@ const DrawerRoutes = () => {
           drawerInactiveTintColor: "#D6D6D6",
         }}
       />
-       <Drawer.Screen
+      <Drawer.Screen
         name="Quem Somos"
         component={QuemSomos}
         options={{
@@ -117,7 +121,7 @@ const DrawerRoutes = () => {
           drawerInactiveTintColor: "#D6D6D6",
         }}
       />
-       <Drawer.Screen
+      <Drawer.Screen
         name="Perfils"
         component={Perfils}
         options={{
@@ -128,7 +132,7 @@ const DrawerRoutes = () => {
               size={24}
               color={focused ? "#131313" : "#D6D6D6"}
             />
-            
+
           ),
           drawerLabel: "Perfil do Criador",
           drawerActiveTintColor: "#131313",
@@ -136,8 +140,26 @@ const DrawerRoutes = () => {
           drawerItemStyle: { height: 0 }
         }}
       />
+      <Drawer.Screen
+        name="Paraolimpiadas"
+        component={Paraolimpiadas}
+        options={{
+          headerTitle: "NewEarth",
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="heart"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+
+          ),
+          drawerLabel: "Paraolimpiadas",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
     </Drawer.Navigator>
-    
+
   );
 };
 
