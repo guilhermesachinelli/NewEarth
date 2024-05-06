@@ -44,6 +44,10 @@ pfp:{
 teamContainer: {
   marginBottom: 150,
 },
+profileContainer: {
+  backgroundColor: "#ece8e7",
+  marginLeft: 10,
+},
 name: {
   fontSize: 14,
   fontWeight: "bold",

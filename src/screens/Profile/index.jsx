@@ -24,8 +24,8 @@ export default function Profile({ route }) {
           return (
             <View key={user.id} style={styles.userContainer}>
               <Text style={styles.text}>Nome: {user.nome}</Text>
-              <Text style={styles.text}>Idade: {user.dataNascimento}</Text>
-              <Text style={styles.text}>CPF: {user.cpf}</Text>
+              <Text style={styles.text}>Fundação: {user.dataNascimento}</Text>
+              <Text style={styles.text}>CNPJ: {user.cpf}</Text>
               <Text style={styles.text}>Email: {user.email}</Text>
               <Text style={styles.text}>Endereço: {user.endereco}</Text>
               <Text style={styles.text}>Telefone: {user.telefone}</Text>
