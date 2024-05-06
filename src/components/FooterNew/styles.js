@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
         backgroundColor: "black",
         justifyContent: "center",
         alignItems: "center",
-        position: "absolute",
         bottom: 0,
     },
     icons: {

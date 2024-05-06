@@ -1,6 +1,7 @@
 import React from 'react';
 import { Image, Text, ScrollView} from 'react-native';
 import styles from './styles';
+import FooterNew from '../../components/FooterNew';
 
 export default function Proposta() {
   return (
@@ -35,6 +36,8 @@ Integração de tecnologias de ponta nas próteses.
         source={require('../../../assets/logosPatrocinadores.png')}
         style={styles.image}
       />
+
+      <FooterNew />
     </ScrollView>
   );
 }

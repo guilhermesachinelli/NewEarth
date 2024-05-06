@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   button: {
     marginTop: 20,
     padding: 10,
-    backgroundColor: "#C9D4FF",
+    backgroundColor: "#A1B65E",
     borderRadius: 5,
   },
   user: {
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   userContainer: {
-    backgroundColor: "#C9D4FF",
+    backgroundColor: "#ece8e7",
     padding: 10,
     margin: 10,
     borderRadius: 5,

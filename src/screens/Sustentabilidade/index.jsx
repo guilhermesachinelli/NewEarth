@@ -49,6 +49,7 @@ export default function Sustentabilidade() {
       <Text style={styles.text}>
       250 próteses vendidas por mês, 500 pessoas beneficiadas pelas próteses, 50 toneladas de materiais reciclados, 25 toneladas de CO2 economizado
       </Text>
+      <FooterNew />
     </ScrollView>
     
   );

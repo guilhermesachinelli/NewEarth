@@ -30,7 +30,7 @@ export default function Profile({ route }) {
               <Text style={styles.text}>Endereço: {user.endereco}</Text>
               <Text style={styles.text}>Telefone: {user.telefone}</Text>
               <Text style={styles.text}>Necessidade: {user.necessidade}</Text>
-              <TouchButton title="Detalhes" route={'Category'} data={user} />
+              <TouchButton title="Detalhes" route={'Category'} data={user}  style={styles.button}/>
             </View>
           );
         }) 

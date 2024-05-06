@@ -3,6 +3,7 @@ import { useNavigation } from "@react-navigation/native";
 import usersList from "../../models/usersList";
 import styles from "./styles";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import FooterNew from "../../components/FooterNew";
 
 export default function Category({ route }) {
   const navigation = useNavigation();
@@ -18,11 +19,12 @@ export default function Category({ route }) {
     <View style={styles.container}>
       {
         data ? (
-          <Text>Detalhes user</Text>
+          <Text style={styles.textTitle}>Detalhes user</Text>
         ) : (
           <Text>Selecione um user</Text>
         )
       }
+      <View style={styles.userContainer}>
       <Text>Nome: {data.nome}</Text>
       <Text>Idade: {data.dataNascimento}</Text>
       <Text>CPF: {data.cpf}</Text>
@@ -30,12 +32,15 @@ export default function Category({ route }) {
       <Text>Endereço: {data.endereco}</Text>
       <Text>Telefone: {data.telefone}</Text>
       <Text>Necessidade: {data.necessidade}</Text>
-      <TouchableOpacity title="Editar" onPress={edituser}>
+      <TouchableOpacity title="Editar" onPress={edituser} style={styles.button}>
         <Text>Editar</Text>
       </TouchableOpacity>
-      <TouchableOpacity title="Remover" onPress={removeuser}>
+      <TouchableOpacity title="Remover" onPress={removeuser} style={styles.button}>
         <Text>Remover</Text>
       </TouchableOpacity>
+      </View>
+
+      <FooterNew/>
     </View>
   );
 }

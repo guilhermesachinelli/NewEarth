@@ -7,6 +7,7 @@ import styles from "./styles";
 import Title from "../../components/Title";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { TextInputMask } from "react-native-masked-text";
+import FooterNew from "../../components/FooterNew";
 
 export default function Cadastro({route}) {
    let { user, edit} = route.params;
@@ -135,6 +136,7 @@ export default function Cadastro({route}) {
                </TouchableOpacity>
             )
          }
+         <FooterNew />
       </View>
    );
 }

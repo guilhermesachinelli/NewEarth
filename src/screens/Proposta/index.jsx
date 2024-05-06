@@ -1,6 +1,7 @@
 import React from 'react';
 import { Image, Text, ScrollView} from 'react-native';
 import styles from './styles';
+import FooterNew from '../../components/FooterNew';
 
 export default function Proposta() {
   return (
@@ -56,6 +57,7 @@ export default function Proposta() {
 
       <Text style={[styles.text, styles.sectionTitle]}>Juntos, podemos construir um mundo melhor.</Text>
 
+    <FooterNew />
     </ScrollView>
   );
 }

@@ -9,9 +9,24 @@ const styles = StyleSheet.create({
   button: {
     marginTop: 20,
     padding: 10,
-    backgroundColor: "#C9D4FF",
+    backgroundColor: "#A1B65E",
     borderRadius: 5,
   },
+  userContainer: {
+    backgroundColor: "#ece8e7",
+    padding: 10,
+    margin: 10,
+    borderRadius: 5,
+  },
+  textTitle: {
+    marginBottom: 20, 
+    fontSize: 21, 
+    lineHeight: 32,
+    fontWeight: 'bold', 
+    color: '#A1B65E', 
+    marginTop: 40, 
+  },
+  
 });
 
 export default styles;

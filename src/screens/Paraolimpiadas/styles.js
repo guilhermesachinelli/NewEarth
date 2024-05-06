@@ -2,8 +2,10 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
-    backgroundColor: '#f0f8ff', // Cor de fundo mais clara para um tema de natureza
+    alignItems: "center",
+    alignContent: "center",
+    margin: "auto",
+    paddingTop: "5%",
   },
   image: {
     marginTop: 20,

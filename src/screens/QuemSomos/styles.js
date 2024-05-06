@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
   fontWeight: "bold",
   fontStyle: "italic",
   margin: 10,
+  color: "#A1B65E",
  },
  nos:{
   marginBottom: 150,
@@ -42,7 +43,7 @@ pfp:{
   margin: 10,
 },
 teamContainer: {
-  marginBottom: 150,
+  marginBottom: 30,
 },
 profileContainer: {
   backgroundColor: "#ece8e7",
