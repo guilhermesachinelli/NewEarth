@@ -12,6 +12,7 @@ import QuemSomos from "../screens/QuemSomos";
 import Proposta from "../screens/Proposta";
 
 import Paraolimpiadas from "../screens/Paraolimpiadas";
+import Sustentabilidade from "../screens/Sustentabilidade";
 
 
 const Drawer = createDrawerNavigator();
@@ -174,6 +175,23 @@ const DrawerRoutes = () => {
             />
           ),
           drawerLabel: "Paraolimpíadas",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
+      <Drawer.Screen
+        name="Sustentabilidade"
+        component={Sustentabilidade}
+        options={{
+          headerTitle: "NewEarth",
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="sun"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          drawerLabel: "Sustentabilidade",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
         }}
