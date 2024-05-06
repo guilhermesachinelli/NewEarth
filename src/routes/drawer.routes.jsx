@@ -9,6 +9,7 @@ import Cadastro from "../screens/Cadastro";
 import Perfils from "../screens/Perfils";
 import QuemSomos from "../screens/QuemSomos";
 import Paraolimpiadas from "../screens/Paraolimpiadas";
+import Proteses from "../screens/Proteses";
 
 const Drawer = createDrawerNavigator();
 
@@ -154,6 +155,24 @@ const DrawerRoutes = () => {
 
           ),
           drawerLabel: "Paraolimpiadas",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
+       <Drawer.Screen
+        name="Proteses"
+        component={Proteses}
+        options={{
+          headerTitle: "NewEarth",
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="slack"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+
+          ),
+          drawerLabel: "Nossas Próteses",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
         }}
