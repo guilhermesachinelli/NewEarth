@@ -26,23 +26,23 @@ export default function QuemSomos() {
         <Text style={styles.titletexts}>Nossa Equipe</Text>
         <View style={styles.teamContainer}>
         <ScrollView horizontal={true}>
-          <TouchableOpacity onPress={() => navigation.navigate("Perfils", { item: nos[0] })}>
+          <TouchableOpacity onPress={() => navigation.navigate("Perfils", { item: nos[0] })} style={styles.profileContainer}>
             <Image source={require('./../../../assets/lima.jpeg')} style={styles.pfp} />
             <Text style={styles.name}>Guilherme Lima</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate("Perfils", { item: nos[1] })}>
+          <TouchableOpacity onPress={() => navigation.navigate("Perfils", { item: nos[1] })} style={styles.profileContainer}>
             <Image source={require('./../../../assets/isa.png')} style={styles.pfp} />
             <Text style={styles.name}>Isabella Barquilha</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate("Perfils", { item: nos[2] })}>
+          <TouchableOpacity onPress={() => navigation.navigate("Perfils", { item: nos[2] })} style={styles.profileContainer}>
             <Image source={require('./../../../assets/godoy.png')} style={styles.pfp} />
             <Text style={styles.name}>Guilherme Godoy</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate("Perfils", { item: nos[3] })}>
+          <TouchableOpacity onPress={() => navigation.navigate("Perfils", { item: nos[3] })} style={styles.profileContainer}>
             <Image source={require('./../../../assets/luana.png')} style={styles.pfp} />
             <Text style={styles.name}>Luana Fassine</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate("Perfils", { item: nos[4] })}>
+          <TouchableOpacity onPress={() => navigation.navigate("Perfils", { item: nos[4] })} style={styles.profileContainer}>
             <Image source={require('./../../../assets/richard.png')} style={styles.pfp} />
             <Text style={styles.name}>Richard Macedo</Text>
           </TouchableOpacity>
