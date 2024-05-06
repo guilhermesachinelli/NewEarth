@@ -83,8 +83,8 @@ export default function Cadastro({route}) {
 
    return (
       <View style={styles.container}>
-         <Title title="Cadastro" />
-         <Text>Seja a mudança que você quer ver no mundo!</Text>
+         <Text style={styles.textTitle}>Cadastre-se</Text>
+         <Text style={styles.textSubTitle}>Seja a mudança que você quer ver no mundo!</Text>
          <TextInput style={styles.input} placeholder="Nome Completo" onChangeText={setNome} value={nome} />
          <DateTimePickerModal
             isVisible={isDatePickerVisible}
@@ -97,7 +97,7 @@ export default function Cadastro({route}) {
             onConfirm={handleConfirm}
             onCancel={hideDatePicker}
          />
-         <Button title="Data de Nascimento" onPress={showDatePicker} />
+         <Button title="Data de Nascimento" onPress={showDatePicker}/>
          <TextInput style={styles.input} value={date ? formatDate(date) : ''} editable={false} />
          <TextInputMask
             style={styles.input}
