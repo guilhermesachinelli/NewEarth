@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image, Text, ScrollView, StyleSheet } from 'react-native';
+import { View, Image, Text, ScrollView} from 'react-native';
 import styles from './styles';
 import FooterNew from '../../components/FooterNew';
 export default function Proteses() {
