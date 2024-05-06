@@ -34,7 +34,7 @@ Integração de tecnologias de ponta nas próteses.
 
      <Image
         source={require('../../../assets/logosPatrocinadores.png')}
-        style={styles.image}
+        style={styles.lastimage}
       />
 
       <FooterNew />

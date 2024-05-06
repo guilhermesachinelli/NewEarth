@@ -114,7 +114,7 @@ A NewEarth, referência em próteses sustentáveis, firma parceria com gigantes 
 
       <Image
         source={require('../../../assets/logosPatrocinadores.png')}
-        style={styles.image}
+        style={styles.lastimage}
       />
       <FooterNew />
     </ScrollView>
