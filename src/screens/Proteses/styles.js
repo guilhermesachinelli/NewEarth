@@ -8,12 +8,28 @@ const styles = StyleSheet.create({
     paddingTop: "5%",
   },
   image: {
-    marginTop: 20,
-    marginBottom: 20,
-    width: '100%',
-    height: 250,
-    borderRadius: 30,
-    resizeMode: 'contain',
+    marginLeft: 77,
+    marginTop: 30,
+  },
+  image2: {
+    marginLeft: 120,
+    marginTop: 30,
+  },
+  image3: {
+    marginLeft: 25,
+    marginTop: 60,
+  },
+  image4: {
+    marginLeft: 80,
+    marginTop: 50,
+  },
+  image5: {
+    marginLeft: 10,
+    marginTop: 50,
+  },
+  image6: {
+    marginLeft: 20,
+    marginTop:30,
   },
   imageHeader: {
     marginTop: 20,
@@ -27,6 +43,7 @@ const styles = StyleSheet.create({
     marginBottom: 30,
     backgroundColor: '#A1B65E',
     borderRadius:29, // Cor de fundo mais clara para um tema de natureza
+    width: "100%"
   },
   info: {
     fontWeight: 'bold', 
